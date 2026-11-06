@@ -1,0 +1,28 @@
+
+# Maven: archivos generados
+target/
+
+# Java
+*.class
+*.log
+
+# VS Code
+.vscode/
+.settings/
+.classpath
+.project
+
+# IntelliJ
+.idea/
+*.iml
+
+# Sistema operativo
+.DS_Store
+*~
+
+# Contraseñas y configuración privada
+.env
+.env.*
+*.key
+*.pem
+

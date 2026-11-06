@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "https://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Conexión MySQL -->
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/dbactiva
+        </property>
+
+        <property name="hibernate.connection.username">
+            activa
+        </property>
+
+        <!-- No crear ni modificar las tablas -->
+        <property name="hibernate.hbm2ddl.auto">validate</property>
+
+        <!-- Mostrar SQL por consola -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+    </session-factory>
+</hibernate-configuration>
